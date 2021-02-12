@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.painel {
+    min-height: 100vh;
+    background: url(/assets/mountain.png) no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.3);
+    width: 800px;
+    max-width: 800px;
+    padding: 25px;
+    
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    border-radius: 10%;
+
+    display: flex;
+    align-items: center;  
+    justify-content:center;  
+    flex-direction: column;
+    position: absolute;
+
+    transform: translate(0, 0);
+    transition: all .6s
+}
+
+.card:hover {
+    transform: translate(0, -10px);
+}
+
+
+label  {
+    color: #A30F31;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+
+.lover-name {
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 2.4rem;
+}
+
+.message {
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 2.4rem;
+}
+
+.data {
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 2.4rem;
+    
+}
+
+h1 {
+    color: #A30F31;
+    text-transform: uppercase;
+    
+}
+
+.love-image {
+    width: 40px;
+    position: relative;
+    left: 10.625rem;
+    top: -6.875rem;
+}
+
+.form {
+    padding: 50px;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content:space-between;
+}
+
+#name {
+    border: 1px solid rgba(0, 0, 0, 0.7);
+
+}
+
+.name {
+    text-align: left;
+}
+
+
+.button {
+    border: 3px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 35px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background: #fff;
+    border: 5px solid #A30F31;
+}
