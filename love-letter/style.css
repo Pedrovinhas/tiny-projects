@@ -4,13 +4,22 @@
     box-sizing: border-box;
 }
 
+body {
+    background: url(/assets/mountain.png) no-repeat;
+    background-attachment: fixed;
+}
+
 .painel {
     min-height: 100vh;
-    background: url(/assets/mountain.png) no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+
+   /* background-color: rgba(255, 255, 255, 0.03);  
+    backdrop-filter: blur(5px); */
 }
+
 
 .card {
     background: rgba(0, 0, 0, 0.3);
@@ -28,8 +37,13 @@
     flex-direction: column;
     position: absolute;
 
+    background-color: rgba(255, 255, 255, );  
+    backdrop-filter: blur(5px);
+    
     transform: translate(0, 0);
-    transition: all .6s
+    
+
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .card:hover {
@@ -85,6 +99,12 @@ h1 {
     width: 100%;
     align-items: center;
     justify-content:space-between;
+
+    
+
+    -webkit-animation: fade-in 1.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 1.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
 }
 
 #name {
@@ -114,3 +134,21 @@ h1 {
     background: #fff;
     border: 5px solid #A30F31;
 }
+
+@keyframes slide-top {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50px);
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
