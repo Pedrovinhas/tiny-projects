@@ -107,7 +107,6 @@ section .color:nth-child(3) {
     height: 60px;
 }
 
-
 .container {
     position:relative;
     width: 400px;
@@ -193,3 +192,5 @@ section .color:nth-child(3) {
     color: #848689;
     font-weight: 600;
 }
+
+
