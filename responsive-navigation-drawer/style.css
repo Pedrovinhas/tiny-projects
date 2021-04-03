@@ -95,7 +95,7 @@ body {
 }
 
 .toggle::before { /* Podemos importar um ícone passando o caminho Unicode dado no site, e colocando como a font-family fontAwesome */
-    content: '\f101';
+    content: '\f100';
     font-family: "Font Awesome 5 Free";
     position: absolute;
     width: 100%;
@@ -108,7 +108,7 @@ body {
 }
 
 .toggle.active::before { /* Quando ativa muda a direção */
-    content: '\f100';
+    content: '\f101';
     font-family: "Font Awesome 5 Free";
     
 }
