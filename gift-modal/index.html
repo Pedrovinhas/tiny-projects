@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gift modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="popup">
+        <div class="contentBox">
+            <div class="close"></div>
+            <div class="imgBx">
+                <img src="https://www.flaticon.com/svg/vstatic/svg/3835/3835774.svg?token=exp=1617428241~hmac=07d99c6a39990e656e416c88c5eae645" alt="Gift Box">
+            </div>
+            <div class="content">
+                <div>
+                    <h3> Special Offer</h3>
+                    <h2>80 <sup> % </sup> <span> Off</span> </h2>
+                    <p> Lorem ipsum dolor sit amet, consectet</p>
+                    <a href="#"> Get The Deal</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Autpmatic Show Pop-Up after 8 seconds -->
+    <script>
+        const popup = document.querySelector('.popup');
+        const close = document.querySelector('.close');
+
+
+        window.onload = function() {
+            setTimeout (function() {
+                popup.style.display = "block";
+
+                // Add some time delay to show pop-up
+            }, 2000)
+        }
+
+        close.addEventListener('click', () => {
+            popup.style.display = "none";
+        })
+    </script>
+</body>
+</html>
