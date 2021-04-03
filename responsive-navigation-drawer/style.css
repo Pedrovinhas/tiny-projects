@@ -31,7 +31,7 @@ body {
 }
 
 .container .navigation.active {
-    width: 300px;
+    width: 80px;
 }
 
 .container .navigation ul {
@@ -95,7 +95,7 @@ body {
 }
 
 .toggle::before { /* Podemos importar um ícone passando o caminho Unicode dado no site, e colocando como a font-family fontAwesome */
-    content: '\f004';
+    content: '\f101';
     font-family: "Font Awesome 5 Free";
     position: absolute;
     width: 100%;
@@ -103,10 +103,12 @@ body {
     line-height: 30px;
     text-align: center;
     font-size: 16px;
-    color: #6843d1;
-    
+    font-weight: 900;
+    color: #6843d1;  
 }
 
 .toggle.active::before { /* Quando ativa muda a direção */
-    content: '\f001';
+    content: '\f100';
+    font-family: "Font Awesome 5 Free";
+    
 }

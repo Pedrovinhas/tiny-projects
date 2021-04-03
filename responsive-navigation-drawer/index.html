@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Navigation Drawer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 </head>
 <body>
     <div class="container">
@@ -57,14 +57,14 @@
             </ul>
         </div>
         <div class="toggle"></div>
-        <script>
-            const navigation = document.querySelector('.navigation');
-            document.querySelector('.toggle').onClick = function(){
-            // A classe active é ativa quando clicamos em cima da tag de classe toggle.
-            this.classList.toggle('active');
-            navigation.classList.toogle('active');
-            }
-        </script>
     </div>
+    <script>
+        const navigation = document.querySelector('.navigation');
+        document.querySelector('.toggle').onclick = function(){
+        // A classe active é ativa quando clicamos em cima da tag de classe toggle.
+        this.classList.toggle('active');
+        navigation.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
