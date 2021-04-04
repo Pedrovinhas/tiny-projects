@@ -57,7 +57,6 @@ label  {
     text-align: center;
 }
 
-
 .lover-name {
     display:flex;
     flex-direction: column;
@@ -113,6 +112,7 @@ h1 {
     border: 1px solid rgba(0, 0, 0, 0.7);
     padding: 5px 50px;
     border-radius: 20px;
+    
 }
 
 #date {
