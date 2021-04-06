@@ -21,3 +21,13 @@ O foco principal é aprender a codar as novas tendências modernas de **web-desi
 <div align="center">
 <img width= 70% src=".github/login-form.gif">
 </div>
+
+### Responsive Navigation Drawer
+<div align="center">
+<img width= 70% src=".github/nav-drawer.gif">
+</div>
+
+### Gift modal
+<div align="center">
+<img width= 70% src=".github/gift-modal.gif">
+</div>
